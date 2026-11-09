@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя перша HTML сторінка</title>
+    <style>
+        :root {
+            --bg: #f4f6f9;
+            --text: #1c2430;
+            --muted: #5b6675;
+            --accent: #1f4fd8;
+            --line: #d5dbe4;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--bg);
+        }
+        header, main, footer {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding-top: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--line);
+        }
+        header strong { font-size: 1.1rem; }
+        nav a {
+            margin-left: 16px;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        nav a:hover, nav a:focus { text-decoration: underline; }
+        h1 { font-size: 2.4rem; line-height: 1.2; margin: 48px 0 12px; }
+        h2 { font-size: 1.4rem; margin: 40px 0 8px; }
+        p.lead { font-size: 1.15rem; color: var(--muted); margin-top: 0; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 4px; }
+        footer {
+            margin-top: 56px;
+            padding-top: 16px;
+            padding-bottom: 32px;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <strong>Мазунов Захар</strong>
+        <nav>
+            <a href="#about">Про мене</a>
+            <a href="#skills">Що я вивчаю</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Привіт, світ!</h1>
+        <p class="lead">Це моя перша HTML сторінка з доданим текстом.</p>
+
+        <h2 id="about">Про мене</h2>
+        <p>
+            Я студент групи ФеП-11с факультету електроніки та комп’ютерних технологій
+            Львівського національного університету імені Івана Франка. Ця сторінка створена
+            під час лабораторної роботи №8 як прототип веб-сторінки та опублікована
+            на GitHub Pages.
+        </p>
+
+        <h2 id="skills">Що я вивчаю</h2>
+        <ul>
+            <li>Python і веб-фреймворк Flask</li>
+            <li>Система контролю версій Git та платформа GitHub</li>
+            <li>Основи HTML і розмітки веб-сторінок</li>
+            <li>Використання ШІ-асистентів у розробці</li>
+        </ul>
+
+        <h2 id="contacts">Контакти</h2>
+        <p>
+            Мій профіль на GitHub:
+            <a href="https://github.com/mazunovzahar-lang">github.com/mazunovzahar-lang</a>
+        </p>
+    </main>
+
+    <footer>
+        Лабораторна робота №8. Львів, 2026.
+    </footer>
+</body>
+</html>
